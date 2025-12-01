@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Intro to CSS Grid</title>
+        <link rel="stylesheet" type="text/css" href="stylegrid.css">
+        <style>
+            {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            }                                                                                                                                                       
+            body{
+               height:100vh;
+               width:100vh;
+            }
+            .container{
+                background-colour: rgb(44, 213, 162);
+                padding:4rem;
+                height: 100vh;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeate(6, 1fr);
+            }
+            .item{
+                background-colour: rgb(235, 159, 17);
+                border: 2px solid black;
+                padding: 1rem;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .item1{
+                grid-column-start: 1/7;
+                background-color: blueviolet;
+            }
+            .item2{
+                grid-column-start: 1/7;
+                background-color: blueviolet;
+            }
+            .item3{
+                grid-column-start: 1/7;
+                background-color: blueviolet;
+            }
+            .item4{
+                grid-column-start: 1/7;
+                background-color: blueviolet;
+            }
+            .item5{
+                grid-column-start: 1/7;
+                background-color: blueviolet;
+            }
+            .item6{
+                grid-column-start: 1/7;
+                background-color: blueviolet;
+            }
+            
+        </style>
+    </head>
+    <body>
+       <h1 style="color: orange; text-align: center;">INTRO TO CSS GRID</h1>
+     <div class="container">
+    <div class="item item1">HEADER</div>
+    <div class="item item2">SIDE MENU</div>
+    <div class="item item3">MAIN CONTENT</div>
+    <div class="item item4">CONTENT 1</div>
+    <div class="item item5">CONTENT 2</div>
+    <div class="item item6">FOOTER</div> 
+    
+    
+    
+    </div>
+</html>

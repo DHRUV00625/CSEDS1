@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ecommerce Product Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; 
+        }
+
+        .product-container {
+            width: 300px; 
+            margin: 50px auto;
+            padding: 20px; 
+            border: 1px solid #dddddd; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .product-image {
+            width: 100% ; 
+            height: 300px; 
+            object-fit: cover;
+            border-radius: 10px; 
+            margin-bottom: 20px; 
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #060606;
+            margin: 0 0 10px 0;
+        }
+
+        .product-price {
+            font-size: 20px; 
+            color: #c50c02;
+            margin: 0 0 15px 0; 
+        }
+        .product-description {
+            font-size: 16px;
+            color: #464545;
+            margin: 0 0 20px 0;
+            line-height: 1.5;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 48%;
+        }
+
+        .add-to-cart {
+            background-color: #007bff;
+        }
+
+        .buy-now {
+            background-color: #28a745;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <img src="C:\CSEDS1\CSEDS1\LAPTOP.jpg" 
+        alt="Product Image" class="product-image">
+        
+        <h2 class="product-title">Lenovo LOQ 15IRX10</h2>
+        
+        <p class="product-price">₹98,019</p>
+        
+        <p class="product-description">Go beyond performance with Intel® Core™ HX Processors, AAA game-ready graphics from NVIDIA® GeForce RTX™ 50 Series GPUs, Hyperchamber Cooling technology offers superior cooling for heavy use</p>
+        
+        <div class="button-container">
+            <button class="button add-to-cart">Add to Cart</button>
+            <button class="button buy-now">Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>

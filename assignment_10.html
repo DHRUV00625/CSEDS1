@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Product Grid</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background: #EDF060;
+padding: 20px;
+}
+h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+.card {
+background: #FF3C38;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+padding: 16px;
+text-align: center;
+}
+.card img {
+width: 100%;
+height: 500px;
+object-fit: cover;
+border-radius: 6px;
+margin-bottom: 10px;
+}
+.card h3 {
+font-size: 18px;
+margin: 8px 0;
+color: #FFFC31
+}
+.card p {
+font-size: 14px;
+color: #ffffff;
+margin: 4px 0;
+}
+.price {
+font-weight: bold;
+color: #E7D7C1;
+}
+@media (max-width: 1024px) {
+.grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 600px) {
+.grid {
+grid-template-columns: 1fr;
+}
+}
+</style>
+</head>
+<body>
+<h2>Responsive Product Grid</h2>
+<div class="grid">
+<div class="card">
+<img src="C:\Users\dhruv\Downloads\245834_1_ (1).jpg" alt="Product 1">
+<h3>LENOVO LOQ 15IRX10</h3>
+<p>The LENOVO LOQ 15IRX10 is the best gaming laptop under $1000.</p>
+<p class="price">$900</p>
+</div>
+
+<div class="card">
+<img src="C:\Users\dhruv\Downloads\StoreLogo.ico" alt="Product 2">
+<h3>Minecraft JAVA</h3>
+<p>Minecraft is a sandbox open world game where your imagination is the limit.Fight monsters, build stuff and more!</p>
+<p class="price">$80</p>
+</div>
+
+<div class="card">
+<img src="C:\Users\dhruv\Downloads\images.jpeg" alt="Product 3">
+<h3>Hollow knight</h3>
+<p>Hollow knight is an indie parkour and souls-like game.</p>
+<p class="price">₹1,299</p>
+</div>
+
+<div class="card">
+<img src="C:\Users\dhruv\Downloads\images (1).jpeg" alt="Product 4">
+<h3>Hollow knight-Silk Song</h3>
+<p>Hollow knight silk song is a parkour and souls like game, the sequel to the 2022 Game of the year.</p>
+<p class="price">$10</p>
+</div>
+</div>
+</body>
+</html>

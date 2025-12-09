@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Product Grid</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #ff8d14;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(97, 96, 96, 0.1);
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 16px rgba(0,0,0,0.15);
+  }
+
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+
+  .card p {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+
+  .price {
+    font-weight: bold;
+  }
+
+  @media (max-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<h2>Responsive Product Grid</h2>
+
+<div class="grid">
+  <div class="card">
+    <img src="C:\Users\dhruv\Downloads\StoreLogo.png" alt="Product 1">
+    <h3>MINECRAFT</h3>
+    <p>One of the highest grossing game of all time.</p>
+    <p class="price">₹1,999</p>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\dhruv\Downloads\images.jpeg" alt="Product 2">
+    <h3>HOLLOW KNIGHT</h3>
+    <p>The best indie souls like game!</p>
+    <p class="price">₹999</p>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\dhruv\Downloads\images (1).jpeg" alt="Product 3">
+    <h3>HOLLOW KNIGHT-SILK SONG</h3>
+    <p>The sequel to the best indie souls like game!</p>
+    <p class="price">₹1,000</p>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\dhruv\Downloads\cs2.png" alt="Product 4">
+    <h3>COUNTER STRIKE 2</h3>
+    <p>One of the best shooters out there!</p>
+    <p class="price">FREE</p>
+  </div>
+</div>
+
+</body>
+</html>

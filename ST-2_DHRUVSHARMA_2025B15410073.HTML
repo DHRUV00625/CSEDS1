@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Responsive Product Grid</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background: red;
+padding: 20px;
+max-width: 1200px;
+margin: auto;
+}
+h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+.card {
+background: white;
+border-radius: 8px;
+padding: 16px;
+text-align: center;
+}
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 16px rgba(0,0,0,0);
+}
+.card img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 6px;
+margin-bottom: 10px;
+}
+.card h3 {
+font-size: 18px;
+margin: 8px 0;
+}
+.card p {
+font-size: 14px;
+margin: 4px 0;
+}
+.price {
+font-weight: bold;
+}
+@media (max-width: 1024px) {
+.grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 600px) {
+.grid {
+grid-template-columns: 1fr;
+}
+}
+</style>
+</head>
+<body>
+<h2>Responsive Product Grid</h2>
+<div class="grid">
+<div class="card">
+<img src="C:\Example.jpeg" alt="Product 1">
+<h3>Product 1</h3>
+<p>Its a really good product</p>
+<p class="price">₹2,00,000</p>
+</div>
+<div class="card">
+<img src="C:Example2.jpeg" alt="Product 2">
+<h3>Product 2</h3>
+<p>Even better than product 1!!!</p>
+<p class="price">₹99999</p>
+</div>
+<div class="card">
+<img src="C:Example 3.jpeg" alt="Product 3">
+<h3>Product 3</h3>
+<p>Even better than product 2!!!!</p>
+<p class="price">₹1</p>
+</div>
+</body>
+</html>
